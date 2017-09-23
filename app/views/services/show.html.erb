@@ -1,0 +1,26 @@
+<p>
+    <strong>Title :</strong>
+    <%= @service.title %>
+</p>
+
+<p>
+    <strong>Url :</strong>
+    <%= @service.url %>
+</p>
+
+
+<h1>Listing pings</h1>
+
+<table>
+    <tr>
+        <th>Time</th>
+        <th>Status Code</th>
+    </tr>
+
+    <% @pings.each do |ping| %>
+    <tr>
+        <td><%= ping.time %></td>
+        <td><%= ping.stcode %></td>
+    </tr>
+    <% end %>
+</table>
